@@ -4,5 +4,5 @@
 
 - For the db service file to be readable from django
 ```
-# export PGSERVICE='.pg_service.conf'
+# export PGSERVICEFILE='.pg_service.conf'
 ```
