@@ -240,6 +240,7 @@ header * + * {
 .container {
 	max-width: 80vw;
 	margin: 0 auto;
+	height: 100vh;
 }
 
 .header__title {
@@ -261,4 +262,15 @@ footer {
 	text-align: center;
 	margin-top: 10vh;
 	padding: 1em;
+}
+
+#promo .container {
+	display:flex;
+    align-items: center;
+    justify-content: center;
+	text-align: center;
+}
+
+.promo-text {
+	font-size: 3rem;
 }
