@@ -13,8 +13,14 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os, sys
 from pathlib import Path
 
+from dotenv import load_dotenv
+
+load_dotenv('.env')
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+# Attach 'apps/' directory as base directory for all user apps
 PROJECT_ROOT = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 
@@ -22,7 +28,7 @@ sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-(wnf050c4@f1p1t0v)jl5+tq!z^lluonk-e)m0(sp5+fyvza0a'
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -131,3 +137,10 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = os.getenv('EMAIL_HOST')
+EMAIL_PORT = os.getenv('EMAIL_PORT')
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')

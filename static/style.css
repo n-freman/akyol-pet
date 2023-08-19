@@ -22,12 +22,13 @@ a {
 }
 
 .top-bar {
-	max-width: 80vw;
-	margin: 0 auto;
+	width: 80vw;
+	left: 10vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 2em;
+	position: absolute;
 }
 
 .top-bar img {
@@ -53,7 +54,7 @@ a {
 	width: 30px;
 	height: 20px;
 	transition: box-shadow 0.2s ease-in-out;
-	border-radius: 1px;
+	border-radius: 5px;
 }
 
 .bars{
@@ -230,7 +231,7 @@ nav .close:hover div::after{
 }
 
 header {
-	padding-top: 10em;
+	padding-top: 15em;
 }
 
 header * + * {
@@ -240,11 +241,11 @@ header * + * {
 .container {
 	max-width: 80vw;
 	margin: 0 auto;
-	height: 100vh;
+	min-height: 80vh;
 }
 
 .header__title {
-	font-size: 3.5em;
+	font-size: 3.5rem;
 }
 
 .header__promo {
@@ -261,7 +262,13 @@ header * + * {
 footer {
 	text-align: center;
 	margin-top: 10vh;
+	font-family: 'Nunito', sans-serif;
+}
+
+footer .container {
 	padding: 1em;
+	border-top: .01px solid #eee;
+	min-height: initial;
 }
 
 #promo .container {
@@ -273,4 +280,86 @@ footer {
 
 .promo-text {
 	font-size: 3rem;
+	background: linear-gradient(to right, #C493FF 0%, #FEFEDF 50%,#00C9A7 100%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 720px) {
+	.promo-text {
+		font-size: 2.5rem;
+	}
+}
+
+.section-title {
+	text-align: center;
+	font-size: 2.3rem;
+}
+
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Nunito', sans-serif;
+}
+
+
+
+#contact-form textarea,
+#contact-form input,
+#contact-form button {
+	border: none;
+	border-radius: 2px;
+	font-size: 1.4em;
+}
+
+#contact-form label {
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+#contact-form input {
+	height: 3rem;
+	padding: 1rem;
+}
+
+#contact-form textarea {
+	height: 13rem;
+	padding: 1rem;
+}
+
+#contact-form button {
+	width: 10rem;
+	min-height: 2.3rem;
+	margin: 2rem 0 2rem auto;
+	font-size: 1.2em;
+	background-color: #fff;
+}
+
+#contact-form button:hover {
+	background-color: #f55;
+	color: #eee;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+
+.col-7 {
+	max-width: 70%;
+}
+
+.col-3 {
+	max-width: 30%;
+}
+
+@media screen and (max-width: 720px) {
+	.row {
+		display: block;
+	}
+
+	[class*="col-"] {
+		max-width: initial;
+	}
 }
