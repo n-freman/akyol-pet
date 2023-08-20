@@ -1,9 +1,23 @@
 {% load static %}
 <section id="contac-us">
     <div class="container">
-        <h1 class="section-title">Contact Us</h1>
+        <h1 
+            class="section-title aos-init aos-animate" 
+            data-aos="fade-up"
+            data-aos-duration="600"
+        >
+            Contact Us
+        </h1>
         <div class="row">
-            <form action="{% url 'contact-us' %}" id="contact-form" class="col-7" method="post">
+            <form
+                action="{% url 'contact-us' %}"
+                id="contact-form"
+                class="col-7"
+                method="post"
+                data-aos="fade-up"
+                data-aos-duration="6000"
+                data-aos-delay="600"
+            >
                 {% for field in contact_form %}
                     <label for="">{{ field.label }}</label>
                     <small class="form__errors">{{ field.errors }}</small>
@@ -11,7 +25,12 @@
                 {% endfor %}
                 <button type="submit">Send</button>
             </form>
-            <div class="col-3">
+            <div 
+                class="col-3"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="1200"
+            >
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sit, corrupti non beatae soluta molestiae asperiores odio expedita esse sint suscipit, alias blanditiis. Rerum nulla voluptates quibusdam sed fugiat in?</p>
             </div>
         </div>

@@ -1,7 +1,6 @@
 from django.views.generic import TemplateView
 from django.http import JsonResponse
 from django.core.mail import EmailMessage
-from django.conf import settings
 
 from .mixins import ContactMixin
 

@@ -13,9 +13,15 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 import os, sys
 from pathlib import Path
 
+import django.utils
+from django.utils.translation import gettext_lazy
+
 from dotenv import load_dotenv
 
 load_dotenv('.env')
+
+# Monkey patch for django translations
+django.utils.translation.ugettext_lazy = gettext_lazy
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -45,7 +51,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # First party
     'main',
+    'goods',
+
+    # Third party
+    'translations',
 ]
 
 MIDDLEWARE = [

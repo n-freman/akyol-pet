@@ -22,13 +22,13 @@ a {
 }
 
 .top-bar {
-	width: 80vw;
-	left: 10vw;
+	width: 100vw;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 2em;
-	position: absolute;
+	padding: 1em 10vw;
+	position: fixed;
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 .top-bar img {
@@ -61,7 +61,7 @@ a {
 	width: 30px;
 	height: 4px;
 	background: #fff;
-  	border-radius: 2px;
+  border-radius: 2px;
 }
 
 .nav-toggle:hover {
@@ -232,6 +232,10 @@ nav .close:hover div::after{
 
 header {
 	padding-top: 15em;
+  background: url('/static/img/header_bg.png');
+  background-size: 600px;
+  background-repeat: no-repeat;
+  background-position: 80% 60%;
 }
 
 header * + * {
@@ -278,12 +282,32 @@ footer .container {
 	text-align: center;
 }
 
+.left-floating-item {
+	height: 1rem;
+	width: 100%;
+	position: absolute;
+	background: linear-gradient(90deg, #ca0011 0%, black 100%);
+	top: 18rem;
+	right: 2rem;
+	z-index: -1;
+}
+
+.right-floating-item {
+	height: 1rem;
+	width: 100%;
+	position: absolute;
+	background: linear-gradient(90deg, black 0%, #ca0011 100%);
+	top: 23rem;
+	left: 2rem;
+	z-index: -1;
+}
+
 .promo-text {
-	font-size: 3rem;
-	background: linear-gradient(to right, #C493FF 0%, #FEFEDF 50%,#00C9A7 100%);
+	font-size: 4rem;
+	/* background: linear-gradient(to right, #C493FF 0%, #FEFEDF 50%,#00C9A7 100%);
 	background-clip: text;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	-webkit-text-fill-color: transparent; */
 }
 
 @media screen and (max-width: 720px) {
@@ -309,7 +333,7 @@ footer .container {
 #contact-form input,
 #contact-form button {
 	border: none;
-	border-radius: 2px;
+	border-radius: 4px;
 	font-size: 1.4em;
 }
 
@@ -329,7 +353,7 @@ footer .container {
 }
 
 #contact-form button {
-	width: 10rem;
+	width: 6rem;
 	min-height: 2.3rem;
 	margin: 2rem 0 2rem auto;
 	font-size: 1.2em;
@@ -361,5 +385,52 @@ footer .container {
 
 	[class*="col-"] {
 		max-width: initial;
+	}
+}
+
+.goods {
+	display: flex;
+	max-width: 100%;
+	overflow: hidden;
+	justify-content: space-around;
+	margin-top: 3rem;
+}
+
+.good-item {
+	max-width: 40%;
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	padding: 3rem;
+	transition: height 1s ease;
+	align-self: flex-start;
+}
+
+.good-item__image {
+	width: 15em;
+	height: 15em;
+	object-fit: contain;
+	transition: height 0.3s ease;
+}
+
+.good-item:hover > .good-item__image {
+	height: 16em;
+}
+
+.good-item__title {
+	text-align: center;
+	margin-top: 2em;
+}
+
+@media screen and (max-width: 720px) {
+	.goods {
+		display: block;
+	}
+
+	.good-item  {
+		max-width: initial;
+	}
+
+	.good-item + .good-item {
+		margin: 4em 0;
 	}
 }
