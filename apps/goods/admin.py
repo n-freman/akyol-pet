@@ -1,8 +1,7 @@
 from django.contrib import admin
-
 from translations.admin import TranslatableAdmin, TranslationInline
 
-from .models import Preform, BottleCap
+from .models import BottleCap, Preform
 
 
 class PreformAdminCofnig(admin.ModelAdmin):

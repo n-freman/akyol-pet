@@ -23,15 +23,21 @@
                     <small class="form__errors">{{ field.errors }}</small>
                     {{ field}}
                 {% endfor %}
-                <button type="submit">Send</button>
+                <button type="submit" class="confetti-button">Send</button>
             </form>
             <div 
-                class="col-3"
+                class="col-3 contact-detail"
                 data-aos="fade-up"
                 data-aos-duration="600"
                 data-aos-delay="1200"
             >
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet sit, corrupti non beatae soluta molestiae asperiores odio expedita esse sint suscipit, alias blanditiis. Rerum nulla voluptates quibusdam sed fugiat in?</p>
+                <h3>You can also contact us through the links below:</h3>
+                <div class="contact-link__list">
+                    <div class="contact-link__item"><p class="contact-link__data"><i class="fa-solid fa-phone text-lg"></i> +99365555555</p></div>
+                    <div class="contact-link__item"><p class="contact-link__data"><i class="fa-solid fa-map-pin text-lg"></i> +99365555555</p></div>
+                    <div class="contact-link__item"><p class="contact-link__data"><i class="fa-solid fa-envelope text-lg"></i> +99365555555</p></div>
+                    <div class="contact-link__item"><p class="contact-link__data"><i class="fa-brands fa-instagram text-lg"></i> +99365555555</p></div>
+                </div>
             </div>
         </div>
     </div>

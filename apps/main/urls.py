@@ -1,8 +1,7 @@
 from django.urls import path
 from django.views.decorators.csrf import csrf_exempt
 
-from .views import HomeView, ContactView
-
+from .views import ContactView, HomeView
 
 urlpatterns = [
     path('', HomeView.as_view(), name='home'),
