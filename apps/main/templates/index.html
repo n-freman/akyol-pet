@@ -1,12 +1,22 @@
 {% extends 'base.html' %}
-{% load static %}
+{% load static i18n %}
 
 {% block content %}
 <aside class="language-bar">
     <ul class="language__list">
-        <li><a href="" class="language__item active">EN</a></li>
+        {% get_available_languages as LANGUAGES %}
+        {% get_current_language as CURRENT_LANGUAGE %} 
+        {% for lang in LANGUAGES %}
+        <li>
+            <form action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                <input type="hidden" name="language" value="{{ lang.0 }}">
+                <button class="language__item{% if lang.0 == CURRENT_LANGUAGE %} active{% endif %}" type="submit">{{ lang.0.upper }}</button>
+            </form>
+        </li>
+        {% endfor %}
+        <!-- <li><a href="" class="language__item active">EN</a></li>
         <li><a href="" class="language__item">RU</a></li>
-        <li><a href="" class="language__item">TM</a></li>
+        <li><a href="" class="language__item">TM</a></li> -->
     </ul>
 </aside>
 <header>

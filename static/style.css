@@ -210,6 +210,8 @@ nav .close:hover div::after{
 
 .language__item {
 	color: #fff;
+	background: none;
+	border: none;
 	font-size: 1.3em;
 	font-family: 'Nunito', sans-serif;
 }
@@ -233,7 +235,7 @@ nav .close:hover div::after{
 
 header {
 	padding-top: 15em;
-  background: url('/static/img/header_bg.png');
+  background: url('/static/images/header_bg.png');
   background-size: 600px;
   background-repeat: no-repeat;
   background-position: 80% 60%;
@@ -365,8 +367,15 @@ footer .container {
 	margin-top: 2rem;
 }
 
-.contact-link__data {
-	padding-bottom: 1em;
+.contact-link__item {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	height: 5rem;
+}
+
+.contact-link__item i {
+	width: 48px;
+	margin-right: 1rem;
 }
 
 .row {
@@ -441,5 +450,4 @@ footer .container {
 
 .text-lg {
 	font-size: 2rem;
-	margin-right: 2rem;
 }

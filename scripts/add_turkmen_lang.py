@@ -2,7 +2,7 @@ import subprocess
 from pprint import pprint as print
 
 files = subprocess.check_output(
-    "find -name '*django.po*' | grep 'tm'",
+    "find . -name '*django.po*' | grep 'tm'",
     shell=True,
     text=True
 ).splitlines()

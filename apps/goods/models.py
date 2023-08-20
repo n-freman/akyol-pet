@@ -9,6 +9,7 @@ class Preform(models.Model):
     height = models.FloatField(null=True)
     blown_volume = models.FloatField()
     image = models.ImageField(upload_to='preforms')
+    slug = models.SlugField()
 
     class Meta:
         verbose_name = 'Preform'

@@ -15,7 +15,9 @@ import sys
 from pathlib import Path
 
 import django.utils
+from django.conf import global_settings
 from django.utils.translation import gettext_lazy
+from django.utils.translation import gettext_lazy as _
 from dotenv import load_dotenv
 
 load_dotenv('.env')
@@ -63,6 +65,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -125,11 +128,35 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 # Internationalization
-# https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+EXTRA_LANG_INFO = {
+    'tm': {
+        'bidi': False, # right-to-left
+        'code': 'tm',
+        'name': 'Turkmen',
+        'name_local': 'Türkmen',
+    },
+}
 
-TIME_ZONE = 'UTC'
+LANG_INFO = django.conf.locale.LANG_INFO
+LANG_INFO.update(EXTRA_LANG_INFO)
+django.conf.locale.LANG_INFO = LANG_INFO
+global_settings.LANGUAGES = global_settings.LANGUAGES + [("tm",'Turkmen'),]
+
+LANGUAGE_CODE = 'en'
+
+LANGUAGES = (
+    ('tm', _('Turkmen')),
+    ('en', _('English')),
+    ('ru', _('Russian')),
+)
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale/'),
+)
+
+
+TIME_ZONE = 'Asia/Ashgabat'
 
 USE_I18N = True
 

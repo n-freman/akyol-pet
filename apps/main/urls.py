@@ -7,4 +7,3 @@ urlpatterns = [
     path('', HomeView.as_view(), name='home'),
     path('contact', csrf_exempt(ContactView.as_view()), name='contact-us'),
 ]
-
