@@ -21,14 +21,11 @@
 </aside>
 <header>
     <div class="container">
-        <h2 class="header__title">Welcome to <br>Ak Ýol | PET</h2>
+        <h2 class="header__title">{% translate 'Welcome to <br>Ak Ýol | PET' %}</h2>
         <p class="header__promo">
-            Order your pet bottles today
-            and start enjoying your 
-            favorite drinks in a safe and
-            sustainable way!
+            {% translate 'Order your pet bottles today and start enjoying your favorite drinks in a safe and sustainable way!' %}
         </p>
-        <a href="" class="confetti-button header__more_btn">Load More</a>
+        <a href="" class="confetti-button header__more_btn">{% translate 'Load More' %}</a>
     </div>
 </header>
 <section id="promo">
@@ -39,16 +36,18 @@
     >
         <div class="left-floating-item"></div>
         <h1 class="promo-text">
+            {% blocktranslate %}
             Our pet bottles 
             <br>
             are the best
+            {% endblocktranslate %}
         </h1>
         <div class="right-floating-item"></div>
     </div>
 </section>
 <section id="products">
     <div class="container">
-        <h1 class="section-title">Our products</h1>
+        <h1 class="section-title">{% translate 'Our products' %}</h1>
         <div class="goods">
             <div
                 class="good-item"
@@ -56,7 +55,7 @@
                 data-aos-duration="1000"
                 >
                 <img src="{% static 'images/preform.png' %}" alt="" class="good-item__image">
-                <h3 class="good-item__title">Preforms</h3>
+                <h3 class="good-item__title">{% translate 'Preforms' %}</h3>
             </div>
             <div
                 class="good-item"
@@ -65,7 +64,7 @@
                 data-aos-delay="800"
             >
                 <img src="{% static 'images/bottlecap.png' %}" alt="" class="good-item__image">
-                <h3 class="good-item__title">Bottle Caps</h3>
+                <h3 class="good-item__title">{% translate 'Bottle Caps' %}</h3>
             </div>
         </div>
     </div>

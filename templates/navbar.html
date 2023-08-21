@@ -1,4 +1,4 @@
-{% load static %}
+{% load static i18n %}
 <div class="top-bar">
 	<div class="nav-toggle">
 		<div class="bars"></div>
@@ -12,9 +12,9 @@
 			<div></div>
 		</div>
 		<ul>
-			<li><a href="{% url 'home' %}">Home</a></li>
-			<li><a href="#">About</a></li>
+			<li><a href="{% url 'home' %}">{% translate 'Home' %}</a></li>
+			<li><a href="#">{% translate 'About' %}</a></li>
 			<li><a href="#">Projects</a></li>
-			<li><a href="{% url 'contact-us' %}">Contact</a></li>
+			<li><a href="{% url 'contact-us' %}">{% translate 'Contact' %}</a></li>
 		</ul>
 </nav>

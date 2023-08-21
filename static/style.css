@@ -415,6 +415,7 @@ footer .container {
 	border-radius: 4px;
 	padding: 3rem;
 	transition: height 1s ease;
+	transition: border-color 0.4 ease;
 	align-self: flex-start;
 }
 
@@ -423,6 +424,10 @@ footer .container {
 	height: 15em;
 	object-fit: contain;
 	transition: height 0.3s ease;
+}
+
+.good-item:hover {
+	border-color: #fcc;
 }
 
 .good-item:hover > .good-item__image {
