@@ -3,34 +3,177 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-20 16:49+0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2023-08-20 19:25+0500\n"
+"PO-Revision-Date: 2023-08-21 10:44+0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.3.2\n"
+
+#: apps/goods/apps.py:8
+msgid "Goods"
+msgstr ""
+
+#: apps/goods/models.py:8 apps/goods/models.py:26
+msgid "code"
+msgstr "код"
+
+#: apps/goods/models.py:10
+msgid "Thread standard"
+msgstr ""
+
+#: apps/goods/models.py:13
+msgid "Weight"
+msgstr "Масса"
+
+#: apps/goods/models.py:14
+msgid "Height"
+msgstr "Высота"
+
+#: apps/goods/models.py:15
+msgid "Blown volume"
+msgstr "Объем при надувании"
+
+#: apps/goods/models.py:16 apps/goods/models.py:50
+#: venv/lib/python3.11/site-packages/django/db/models/fields/files.py:393
+msgid "Image"
+msgstr "Фото"
+
+#: apps/goods/models.py:17
+msgid "Slug"
+msgstr ""
+
+#: apps/goods/models.py:20
+msgid "Preform"
+msgstr "Преформa"
+
+#: apps/goods/models.py:21 apps/main/templates/index.html:58
+msgid "Preforms"
+msgstr "Преформы"
+
+#: apps/goods/models.py:30
+msgid "Raw materials"
+msgstr "Сырые Материалы"
+
+#: apps/goods/models.py:34
+msgid "Application"
+msgstr "Приложение"
+
+#: apps/goods/models.py:38
+msgid "Logo"
+msgstr "Лого"
+
+#: apps/goods/models.py:42
+msgid "Manufacturing technology"
+msgstr "Технология производства"
+
+#: apps/goods/models.py:46
+msgid "Food security"
+msgstr "Пищевая безопасность"
+
+#: apps/goods/models.py:64
+msgid "Bottle Cap"
+msgstr "Крышка для Бутылок"
+
+#: apps/goods/models.py:65 apps/main/templates/index.html:67
+msgid "Bottle Caps"
+msgstr "Крышки для Бутылок"
+
+#: apps/main/forms.py:6
+msgid "Your email"
+msgstr "Ваша почта"
+
+#: apps/main/forms.py:7
+msgid "Subject"
+msgstr "Тема"
+
+#: apps/main/forms.py:9
+msgid "Message"
+msgstr "Сообщение"
+
+#: apps/main/templates/index.html:24
+msgid "Welcome to <br>Ak Ýol | PET"
+msgstr "Добро пожаловать в <br>Ak Ýol | PET"
+
+#: apps/main/templates/index.html:26
+msgid ""
+"Order your pet bottles today and start enjoying your favorite drinks in a "
+"safe and sustainable way!"
+msgstr ""
+"Закажите бутылки сегодня и начните наслаждаться вашими любимыми напитками "
+"безопасно!"
+
+#: apps/main/templates/index.html:28
+msgid "Load More"
+msgstr "Узнать больше"
+
+#: apps/main/templates/index.html:39
+msgid ""
+"\n"
+"            Our pet bottles \n"
+"            <br>\n"
+"            are the best\n"
+"            "
+msgstr ""
+"\n"
+"Наши ПЭТ<br>\n"
+"бутылки - лучшие"
+
+#: apps/main/templates/index.html:50
+msgid "Our products"
+msgstr "Наши товары"
 
 #: core/settings.py:149
-msgid "English"
+msgid "Turkmen"
 msgstr ""
 
 #: core/settings.py:150
-msgid "Russian"
+msgid "English"
 msgstr ""
 
 #: core/settings.py:151
-msgid "Turkmen"
+msgid "Russian"
 msgstr ""
+
+#: templates/contact_block.html:9
+msgid "Contact Us"
+msgstr "Связаться С Нами"
+
+#: templates/contact_block.html:33
+msgid "You can also contact us through the links below:"
+msgstr "Вы также можете связаться с нами следующими способами:"
+
+#: templates/contact_block.html:36
+msgid ""
+"Ashgabat, Bagtyyarlyk district,\n"
+"                        Ruhabat residential complex,\n"
+"                        Galkynysh street, 10"
+msgstr ""
+
+#: templates/footer.html:4
+msgid "All rights reserved. Powered by n-freman"
+msgstr ""
+
+#: templates/navbar.html:15
+msgid "Home"
+msgstr "Главная"
+
+#: templates/navbar.html:16
+msgid "About"
+msgstr "О нас"
+
+#: templates/navbar.html:18
+msgid "Contact"
+msgstr "Связаться"
 
 #: venv/lib/python3.11/site-packages/django/contrib/messages/apps.py:15
 msgid "Messages"
@@ -145,6 +288,7 @@ msgid_plural ""
 "%(show_value)d)."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/core/validators.py:438
 #, python-format
@@ -156,6 +300,7 @@ msgid_plural ""
 "%(show_value)d)."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/core/validators.py:461
 #: venv/lib/python3.11/site-packages/django/forms/fields.py:347
@@ -169,6 +314,7 @@ msgid "Ensure that there are no more than %(max)s digit in total."
 msgid_plural "Ensure that there are no more than %(max)s digits in total."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/core/validators.py:468
 #, python-format
@@ -176,6 +322,7 @@ msgid "Ensure that there are no more than %(max)s decimal place."
 msgid_plural "Ensure that there are no more than %(max)s decimal places."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/core/validators.py:473
 #, python-format
@@ -185,6 +332,7 @@ msgid_plural ""
 "Ensure that there are no more than %(max)s digits before the decimal point."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/core/validators.py:544
 #, python-format
@@ -439,10 +587,6 @@ msgstr ""
 msgid "File"
 msgstr ""
 
-#: venv/lib/python3.11/site-packages/django/db/models/fields/files.py:393
-msgid "Image"
-msgstr ""
-
 #: venv/lib/python3.11/site-packages/django/db/models/fields/json.py:26
 msgid "A JSON object"
 msgstr ""
@@ -534,6 +678,7 @@ msgid_plural ""
 "Ensure this filename has at most %(max)d characters (it has %(length)d)."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/forms/fields.py:630
 msgid "Please either submit a file or check the clear checkbox, not both."
@@ -594,6 +739,7 @@ msgid "Please submit at most %(num)d form."
 msgid_plural "Please submit at most %(num)d forms."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/forms/formsets.py:72
 #, python-format
@@ -601,6 +747,7 @@ msgid "Please submit at least %(num)d form."
 msgid_plural "Please submit at least %(num)d forms."
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/forms/formsets.py:484
 #: venv/lib/python3.11/site-packages/django/forms/formsets.py:491
@@ -688,6 +835,7 @@ msgid "%(size)d byte"
 msgid_plural "%(size)d bytes"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/template/defaultfilters.py:910
 #, python-format
@@ -1036,6 +1184,7 @@ msgid "%(num)d year"
 msgid_plural "%(num)d years"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/utils/timesince.py:9
 #, python-format
@@ -1043,6 +1192,7 @@ msgid "%(num)d month"
 msgid_plural "%(num)d months"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/utils/timesince.py:10
 #, python-format
@@ -1050,6 +1200,7 @@ msgid "%(num)d week"
 msgid_plural "%(num)d weeks"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/utils/timesince.py:11
 #, python-format
@@ -1057,6 +1208,7 @@ msgid "%(num)d day"
 msgid_plural "%(num)d days"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/utils/timesince.py:12
 #, python-format
@@ -1064,6 +1216,7 @@ msgid "%(num)d hour"
 msgid_plural "%(num)d hours"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/utils/timesince.py:13
 #, python-format
@@ -1071,6 +1224,7 @@ msgid "%(num)d minute"
 msgid_plural "%(num)d minutes"
 msgstr[0] ""
 msgstr[1] ""
+msgstr[2] ""
 
 #: venv/lib/python3.11/site-packages/django/views/csrf.py:111
 msgid "Forbidden"
