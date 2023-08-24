@@ -46,23 +46,25 @@
     <div class="container">
         <h1 class="section-title">{% translate 'Our products' %}</h1>
         <div class="goods">
-            <div
+            <a 
+                href="{% url 'preforms-list' %}" 
                 class="good-item"
                 data-aos="fade-right"
                 data-aos-duration="1000"
-                >
-                <img src="{% static 'images/preform.png' %}" alt="" class="good-item__image">
-                <h3 class="good-item__title">{% translate 'Preforms' %}</h3>
-            </div>
-            <div
+            >
+                    <img src="{% static 'images/preform.png' %}" alt="" class="good-item__image">
+                    <h3 class="good-item__title">{% translate 'Preforms' %}</h3>
+            </a>
+            <a 
+                href="{% url 'bottlecaps-list' %}"
                 class="good-item"
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 data-aos-delay="800"
             >
-                <img src="{% static 'images/bottlecap.png' %}" alt="" class="good-item__image">
-                <h3 class="good-item__title">{% translate 'Bottle Caps' %}</h3>
-            </div>
+                    <img src="{% static 'images/bottlecap.png' %}" alt="" class="good-item__image">
+                    <h3 class="good-item__title">{% translate 'Bottle Caps' %}</h3>
+            </a>
         </div>
     </div>
 </section>

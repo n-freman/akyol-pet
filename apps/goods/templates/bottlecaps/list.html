@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div style="margin-bottom: 5rem;"></div>
+<main>
+    <div class="container">
+        <h1 class="section-title">{% translate 'Bottle Caps' %}</h1>
+        <div class="products">
+            {% for bottlecap in bottlecaps %}
+            <div class="product">
+                <img src="" alt="">
+                <h3>{% translate 'Bottle Cap' %} {{ bottlecap.code }}</h3>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% endblock %}

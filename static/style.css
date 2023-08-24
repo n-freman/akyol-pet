@@ -28,7 +28,7 @@ a {
 	align-items: center;
 	padding: 1em 10vw;
 	position: fixed;
-	background-color: rgba(255, 255, 255, 0.1);
+	background-color: rgba(0, 0, 0, 0.6);
 	z-index: 10;
 }
 
@@ -230,15 +230,15 @@ nav .close:hover div::after{
 
 .language__item.active {
 	font-size: 1.7em;
-	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	padding-left: 0.1em;
 }
 
 header {
 	padding-top: 15em;
-  background: url('/static/images/header_bg.png');
-  background-size: 600px;
-  background-repeat: no-repeat;
-  background-position: 80% 60%;
+  	background: url('/static/images/header_bg.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 header * + * {
@@ -248,11 +248,11 @@ header * + * {
 .container {
 	max-width: 80vw;
 	margin: 0 auto;
-	min-height: 80vh;
+	min-height: 85vh;
 }
 
 .header__title {
-	font-size: 3.5rem;
+	font-size: 3.5em;
 }
 
 .header__promo {
@@ -264,6 +264,21 @@ header * + * {
 	background-color: #fff;
 	color: #000;
 	font-family: 'Nunito', sans-serif;
+}
+
+@media screen and (max-width: 720px) {
+	header {
+		background-position: 70%;
+		background-size: 180%;
+	}
+
+	.header__title {
+		font-size: 3rem;
+	}
+
+	.header__promo {
+		font-size: 0.8rem;
+	}
 }
 
 footer {
@@ -323,12 +338,13 @@ footer .container {
 #contact-form {
 	display: flex;
 	flex-direction: column;
-	font-family: 'Nunito', sans-serif;
 }
 
 #contact-form textarea,
 #contact-form input,
 #contact-form button {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
 	border: none;
 	border-radius: 4px;
 	font-size: 1.4em;
@@ -361,6 +377,7 @@ footer .container {
 	margin: 2rem 0 2rem auto;
 	background-color: #fff;
 	padding: initial;
+	color: #000;
 }
 
 .contact-detail, .contact-link__item {
@@ -376,6 +393,10 @@ footer .container {
 .contact-link__item i {
 	width: 48px;
 	margin-right: 1rem;
+}
+
+.contact-link__data {
+	color: #fff;
 }
 
 .row {
@@ -410,6 +431,7 @@ footer .container {
 }
 
 .good-item {
+	color: #fff;
 	max-width: 40%;
 	border: 2px solid #f0f0f0;
 	border-radius: 4px;
@@ -441,18 +463,61 @@ footer .container {
 
 @media screen and (max-width: 720px) {
 	.goods {
-		display: block;
-	}
-
-	.good-item  {
-		max-width: initial;
+		flex-wrap: wrap;
 	}
 
 	.good-item + .good-item {
 		margin: 4em 0;
 	}
+
+	.good-item  {
+		max-width: 80vw;
+	}
 }
 
 .text-lg {
 	font-size: 2rem;
+}
+
+.products {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.product {
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 3em;
+	margin-top: 25em;
+	color: #fff;
+}
+
+.product__image {
+	position: absolute;
+	width: 20em;
+	bottom: 5em;
+	transition: width 0.3s ease-in;
+}
+
+.product:hover > .product__image {
+	width: 25em;
+}
+
+@media screen and (max-width: 720px) {
+	.products {
+		grid-template-columns: 1fr;
+	}
+
+	.product {
+		margin-top: 20em;
+	}
+
+	.product__image {
+		width: 15em;
+	}
+
+	.product:hover > .product__image {
+		width: 18em;
+	}
 }

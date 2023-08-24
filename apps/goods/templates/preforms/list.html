@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div style="margin-bottom: 5rem;"></div>
+<main>
+    <div class="container">
+        <h1 class="section-title">{% translate 'Preforms' %}</h1>
+        <div class="products">
+            {% for preform in preforms %}
+            <a class="product" href="#">
+                <img src="{{ preform.image.url }}" alt="" class="product__image">
+                <h3>{% translate 'Code' %}: {{ preform.code }}</h3>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% endblock %}

@@ -21,8 +21,10 @@ from django.contrib import admin
 from django.urls import include, path, re_path
 
 urlpatterns = i18n_patterns(
+    path('jet/', include('jet.urls', 'jet')),
     path('admin/', admin.site.urls),
     re_path(r'^i18n/', include('django.conf.urls.i18n')),
+    path('goods/', include('goods.urls')),
     path('', include('main.urls')),
 )
 

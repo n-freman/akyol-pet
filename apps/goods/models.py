@@ -4,16 +4,34 @@ from translations.models import Translatable
 
 
 class Preform(models.Model):
-    code = models.IntegerField(_("code"), primary_key=True)
+    code = models.CharField(
+        _("code"), 
+        max_length=16, 
+        primary_key=True
+    )
     thread_standard = models.CharField(
         _("Thread standard"),
         max_length=120
     )
-    weight = models.IntegerField(_("Weight"), )
-    height = models.FloatField(_("Height"), null=True)
-    blown_volume = models.FloatField(_("Blown volume"), )
-    image = models.ImageField(_("Image"), upload_to='preforms')
-    slug = models.SlugField(_("Slug"), )
+    weight = models.FloatField(
+        _("Weight"),
+        null=True,
+        blank=True
+    )
+    height = models.FloatField(
+        _("Height"),
+        null=True,
+        blank=True
+    )
+    blown_volume = models.CharField(
+        _("Blown volume"),
+        max_length=120,
+        null=True
+    )
+    image = models.ImageField(
+        _("Image"),
+        upload_to='preforms'
+    )
 
     class Meta:
         verbose_name = _('Preform')
@@ -21,8 +39,9 @@ class Preform(models.Model):
 
 
 class BottleCap(Translatable):
-    code = models.IntegerField(
+    code = models.CharField(
         _("code"), 
+        max_length=16,
         primary_key=True
     )
     raw_materials = models.CharField(
