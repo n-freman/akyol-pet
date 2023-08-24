@@ -5,3 +5,4 @@ db.sqlite3
 *.DS_Store*
 .pg_service.conf
 .my_pgpass
+media/*

@@ -3,11 +3,19 @@ from django.http import JsonResponse
 from django.views.generic import TemplateView
 
 from .mixins import ContactMixin
+from .models import Banner
 
 
 class HomeView(ContactMixin, TemplateView):
     template_name = 'index.html'
 
+    def get_context_data(self, *args, **kwargs):
+        context = super().get_context_data(*args, **kwargs)
+        context['banners'] = ','.join(
+            [banner.image.url for banner in Banner.objects.filter(active=True)]
+        )
+        print(context['banners'])
+        return context
 
 
 class ContactView(ContactMixin, TemplateView):

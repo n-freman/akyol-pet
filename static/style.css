@@ -238,7 +238,8 @@ header {
 	padding-top: 15em;
   	background: url('/static/images/header_bg.webp');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
+	transition: background-image 0.2s ease-in-out;
 }
 
 header * + * {
@@ -501,7 +502,7 @@ footer .container {
 }
 
 .product:hover > .product__image {
-	width: 25em;
+	width: 23em;
 }
 
 @media screen and (max-width: 720px) {

@@ -16,7 +16,10 @@
         {% endfor %}
     </ul>
 </aside>
-<header>
+<header
+    id="banner"
+    data-banners="{{ banners }}"
+>
     <div class="container">
         <h2 class="header__title">{% translate 'Welcome to <br>Ak Ýol | PET' %}</h2>
         <p class="header__promo">
@@ -68,5 +71,6 @@
         </div>
     </div>
 </section>
+<script src="{% static 'js/banners.js' %}" ></script>
 {% include 'contact_block.html' %}
 {% endblock %}
