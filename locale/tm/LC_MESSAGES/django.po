@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-20 19:25+0500\n"
+"POT-Creation-Date: 2023-08-26 00:01+0500\n"
 "PO-Revision-Date: 2023-08-21 10:45+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -22,70 +22,91 @@ msgstr ""
 msgid "Goods"
 msgstr ""
 
-#: apps/goods/models.py:8 apps/goods/models.py:26
+#: apps/goods/models.py:9 apps/goods/models.py:47
 msgid "code"
 msgstr ""
 
-#: apps/goods/models.py:10
+#: apps/goods/models.py:14
 msgid "Thread standard"
 msgstr ""
 
-#: apps/goods/models.py:13
+#: apps/goods/models.py:18
 msgid "Weight"
-msgstr ""
+msgstr "Agram"
 
-#: apps/goods/models.py:14
+#: apps/goods/models.py:23 apps/goods/templates/preforms/detail.html:21
 msgid "Height"
-msgstr ""
+msgstr "Beýiklik"
 
-#: apps/goods/models.py:15
+#: apps/goods/models.py:28
 msgid "Blown volume"
-msgstr ""
+msgstr "Çişirilen göwrümi"
 
-#: apps/goods/models.py:16 apps/goods/models.py:50
+#: apps/goods/models.py:33 apps/goods/models.py:72 apps/main/models.py:7
 #: venv/lib/python3.11/site-packages/django/db/models/fields/files.py:393
 msgid "Image"
-msgstr ""
+msgstr "Surat"
 
-#: apps/goods/models.py:17
-msgid "Slug"
-msgstr ""
-
-#: apps/goods/models.py:20
+#: apps/goods/models.py:38
 msgid "Preform"
 msgstr "Preforma"
 
-#: apps/goods/models.py:21 apps/main/templates/index.html:58
+#: apps/goods/models.py:39 apps/goods/templates/preforms/list.html:8
+#: apps/main/templates/index.html:59
 msgid "Preforms"
 msgstr "Preformalar"
 
-#: apps/goods/models.py:30
+#: apps/goods/models.py:52 apps/goods/templates/bottlecaps/detail.html:16
 msgid "Raw materials"
-msgstr ""
+msgstr "Çyg materiallar"
 
-#: apps/goods/models.py:34
+#: apps/goods/models.py:56 apps/goods/templates/bottlecaps/detail.html:17
 msgid "Application"
-msgstr ""
+msgstr "Ulanyşy"
 
-#: apps/goods/models.py:38
+#: apps/goods/models.py:60 apps/goods/templates/bottlecaps/detail.html:18
 msgid "Logo"
 msgstr ""
 
-#: apps/goods/models.py:42
+#: apps/goods/models.py:64 apps/goods/templates/bottlecaps/detail.html:19
 msgid "Manufacturing technology"
-msgstr ""
+msgstr "Öndüriliş tehnologiýasy"
 
-#: apps/goods/models.py:46
+#: apps/goods/models.py:68 apps/goods/templates/bottlecaps/detail.html:20
 msgid "Food security"
-msgstr ""
+msgstr "Iýmit howpsuzlygy"
 
-#: apps/goods/models.py:64
+#: apps/goods/models.py:86 apps/goods/templates/bottlecaps/list.html:18
 msgid "Bottle Cap"
 msgstr "Guty gapak"
 
-#: apps/goods/models.py:65 apps/main/templates/index.html:67
+#: apps/goods/models.py:87 apps/goods/templates/bottlecaps/list.html:8
+#: apps/main/templates/index.html:69
 msgid "Bottle Caps"
 msgstr "Guty gapaklary"
+
+#: apps/goods/templates/bottlecaps/detail.html:13
+#: apps/goods/templates/preforms/detail.html:13
+msgid "Description"
+msgstr "Tesbir"
+
+#: apps/goods/templates/bottlecaps/detail.html:15
+#: apps/goods/templates/preforms/detail.html:15
+#: apps/goods/templates/preforms/list.html:18
+msgid "Code"
+msgstr "Kod"
+
+#: apps/goods/templates/preforms/detail.html:16
+msgid "Thread Standard"
+msgstr ""
+
+#: apps/goods/templates/preforms/detail.html:18
+msgid "Weigth"
+msgstr ""
+
+#: apps/goods/templates/preforms/detail.html:23
+msgid "Blown Volume"
+msgstr "Çişirilen göwrümi"
 
 #: apps/main/forms.py:6
 msgid "Your email"
@@ -99,6 +120,10 @@ msgstr "Mesele"
 msgid "Message"
 msgstr "Hat"
 
+#: apps/main/models.py:11
+msgid "Is Banner Active"
+msgstr ""
+
 #: apps/main/templates/index.html:24
 msgid "Welcome to <br>Ak Ýol | PET"
 msgstr "Hoş Geldiňiz <br>Ak Ýol | PET"
@@ -107,7 +132,8 @@ msgstr "Hoş Geldiňiz <br>Ak Ýol | PET"
 msgid ""
 "Order your pet bottles today and start enjoying your favorite drinks in a "
 "safe and sustainable way!"
-msgstr ""
+msgstr "Şü günden beýläk biziň pet gutylarymyzy ulanyň we öz halýan "
+"içgileriňizi howpsuz dadyň"
 
 #: apps/main/templates/index.html:28
 msgid "Load More"
@@ -130,15 +156,15 @@ msgstr ""
 msgid "Our products"
 msgstr "Biziň harytlarymyz"
 
-#: core/settings.py:149
+#: core/settings.py:150
 msgid "Turkmen"
 msgstr ""
 
-#: core/settings.py:150
+#: core/settings.py:151
 msgid "English"
 msgstr ""
 
-#: core/settings.py:151
+#: core/settings.py:152
 msgid "Russian"
 msgstr ""
 
@@ -150,11 +176,13 @@ msgstr "Habarlaşmak"
 msgid "You can also contact us through the links below:"
 msgstr "Biz bilen indiki belgiler boýunça habarlaşyp bilersiňiz:"
 
-#: templates/contact_block.html:36
+#: templates/contact_block.html:42
 msgid ""
-"Ashgabat, Bagtyyarlyk district,\n"
-"                        Ruhabat residential complex,\n"
-"                        Galkynysh street, 10"
+"\n"
+"                                Ashgabat, Bagtyyarlyk district,\n"
+"                                Ruhabat residential complex,\n"
+"                                Galkynysh street, 10\n"
+"                            "
 msgstr ""
 
 #: templates/footer.html:4

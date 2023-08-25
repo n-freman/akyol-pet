@@ -40,6 +40,9 @@ class Preform(models.Model):
     
     def get_absolute_url(self):
         return reverse('preforms-detail', kwargs={'pk': self.code})
+    
+    def __str__(self):
+        return self.code
 
 
 class BottleCap(Translatable):
@@ -88,3 +91,6 @@ class BottleCap(Translatable):
 
     def get_absolute_url(self):
         return reverse('bottlecap-detail', kwargs={'pk': self.code})
+    
+    def __str__(self):
+        return self.code

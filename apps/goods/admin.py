@@ -5,10 +5,11 @@ from .models import BottleCap, Preform
 
 
 class PreformAdminCofnig(admin.ModelAdmin):
-    pass
+    list_display = ['code', 'thread_standard', 'weight', 'height']
 
 
 class BottleCapAdminConfig(TranslatableAdmin):
+    list_display = ['code', 'raw_materials']
     inlines = [TranslationInline, ]
 
 
