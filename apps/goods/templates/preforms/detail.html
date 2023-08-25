@@ -1,5 +1,29 @@
 {% extends 'base.html' %}
+{% load i18n %}
 
 {% block content %}
 <div style="height: 5rem;"></div>
+<main>
+    <div class="container">
+        <div class="row product-detail">
+            <div class="col-3">
+                <img src="{{ preform.image.url }}" alt="" class="product-detail__image">
+            </div>
+            <div class="col-5">
+                <h1 class="product-detail__title">{% translate 'Description' %}</h1>
+                <div class="product-detail__info">
+                    <p>{% translate 'Code' %}: {{ preform.code }}</hp>
+                    <p>{% translate 'Thread Standard' %}: {{ preform.thread_standard }}</p>
+                    {% if preform.weight %}
+                    <p>{% translate 'Weigth' %}: {{ preform.weight }}</p>
+                    {% endif %}
+                    {% if preform.height %}
+                    <p>{% translate 'Height' %}: {{ preform.height }}</p>
+                    {% endif %}
+                    <p>{% translate 'Blown Volume' %}: {{ preform.blown_volume }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
 {% endblock %}

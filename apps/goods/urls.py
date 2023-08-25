@@ -14,7 +14,7 @@ urlpatterns = [
         name='preforms-list'
     ),
     path(
-        'preforms/<slug:slug>',
+        'preforms/<str:pk>',
         PreformDetailView.as_view(),
         name='preforms-detail'
     ),
@@ -24,7 +24,7 @@ urlpatterns = [
         name='bottlecaps-list'
     ),
     path(
-        'bottle-caps/<slug:slug>',
+        'bottle-caps/<str:pk>',
         BottleCapDetailView.as_view(),
         name='bottlecap-detail'
     )

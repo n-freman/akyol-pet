@@ -6,12 +6,17 @@
 <main>
     <div class="container">
         <h1 class="section-title">{% translate 'Bottle Caps' %}</h1>
-        <div class="products">
+        <div class="products bordered-bg">
             {% for bottlecap in bottlecaps %}
-            <div class="product">
-                <img src="" alt="">
-                <h3>{% translate 'Bottle Cap' %} {{ bottlecap.code }}</h3>
-            </div>
+            <a
+                class="product"
+                href="{{ bottlecap.get_absolute_url }}"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+            >
+                <img src="{{ bottlecap.image.url }}" alt="" class="product__image">
+                <h3 class="product__title">{% translate 'Bottle Cap' %} {{ bottlecap.code }}</h3>
+            </a>
             {% endfor %}
         </div>
     </div>

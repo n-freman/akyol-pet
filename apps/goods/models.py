@@ -1,3 +1,4 @@
+from django.urls import reverse
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 from translations.models import Translatable
@@ -36,6 +37,9 @@ class Preform(models.Model):
     class Meta:
         verbose_name = _('Preform')
         verbose_name_plural = _('Preforms')
+    
+    def get_absolute_url(self):
+        return reverse('preforms-detail', kwargs={'pk': self.code})
 
 
 class BottleCap(Translatable):
@@ -81,3 +85,6 @@ class BottleCap(Translatable):
     class Meta:
         verbose_name = _('Bottle Cap')
         verbose_name_plural = _('Bottle Caps')
+
+    def get_absolute_url(self):
+        return reverse('bottlecap-detail', kwargs={'pk': self.code})
