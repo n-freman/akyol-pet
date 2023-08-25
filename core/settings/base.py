@@ -26,10 +26,11 @@ load_dotenv('.env')
 django.utils.translation.ugettext_lazy = gettext_lazy
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # Attach 'apps/' directory as base directory for all user apps
-PROJECT_ROOT = os.path.dirname(__file__)
+PROJECT_ROOT = os.path.pardir
+print(PROJECT_ROOT, BASE_DIR)
 sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
 
 # Quick-start development settings - unsuitable for production
