@@ -1,3 +1,4 @@
+from django.utils.translation import get_language
 from django.views.generic import DetailView, ListView
 
 from .models import BottleCap, Preform
@@ -20,8 +21,22 @@ class BottleCapListView(ListView):
     template_name = 'bottlecaps/list.html'
     context_object_name = 'bottlecaps'
 
+    def get_queryset(self):
+        return self.model.objects.all() \
+            .translate(lang=get_language())
+
 
 class BottleCapDetailView(DetailView):
     model = BottleCap
     template_name = 'bottlecaps/detail.html'
     context_object_name = 'bottlecap'
+
+    def get_object(self, queryset=None):
+        if queryset is None:
+            queryset = self.get_queryset()
+
+        # Next, try looking up by primary key.
+        pk = self.kwargs.get(self.pk_url_kwarg)
+        queryset = queryset.filter(pk=pk) \
+            .translate(lang=get_language())
+        return queryset.first()
