@@ -11,10 +11,7 @@ class HomeView(ContactMixin, TemplateView):
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
-        context['banners'] = ','.join(
-            [banner.image.url for banner in Banner.objects.filter(active=True)]
-        )
-        print(context['banners'])
+        context['banners'] = Banner.objects.filter(active=True)
         return context
 
 

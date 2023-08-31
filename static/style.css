@@ -198,6 +198,7 @@ nav .close:hover div::after{
 	top: 50%;
 	right: 5%;
 	transform: translateY(-50%);
+	z-index: 100;
 }
 
 .language__list {
@@ -234,22 +235,16 @@ nav .close:hover div::after{
 	padding-left: 0.1em;
 }
 
-header {
-	padding-top: 15em;
-  	background: url('/static/images/header_bg.webp');
-	background-repeat: no-repeat;
-	background-size: contain;
-	transition: background-image 0.2s ease-in-out;
-}
-
-header * + * {
-	margin-top: 2rem;
-}
-
 .container {
-	max-width: 80vw;
 	margin: 0 auto;
 	min-height: 85vh;
+	padding: 0 10vw;
+}
+
+#banner .container {
+	padding: 15em 10vw 10em;
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 .header__title {
@@ -265,12 +260,20 @@ header * + * {
 	background-color: #fff;
 	color: #000;
 	font-family: 'Nunito', sans-serif;
+	margin-top: 1em;
+}
+
+@media screen and (max-width: 1720px) {
+	#banner .container {
+		background-position: 70%;
+	}
 }
 
 @media screen and (max-width: 720px) {
-	header {
+	#banner .container {
 		background-position: 70%;
 		background-size: 180%;
+		padding-bottom: 15em;
 	}
 
 	.header__title {
@@ -299,6 +302,7 @@ footer .container {
     align-items: center;
     justify-content: center;
 	text-align: center;
+	height: auto;
 }
 
 .left-floating-item {
