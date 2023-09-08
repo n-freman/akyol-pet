@@ -1,4 +1,4 @@
 from .base import *
 
-ALLOWED_HOSTS = ['216.250.11.37', '127.0.0.1', '0.0.0.0']
+ALLOWED_HOSTS = ['216.250.11.37', '0.0.0.0', 'akyolpet.com.tm']
 DEBUG = False
