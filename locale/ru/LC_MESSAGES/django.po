@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-26 00:01+0500\n"
+"POT-Creation-Date: 2023-09-08 20:05+0500\n"
 "PO-Revision-Date: 2023-08-21 10:44+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -23,7 +23,7 @@ msgstr ""
 msgid "Goods"
 msgstr ""
 
-#: apps/goods/models.py:9 apps/goods/models.py:47
+#: apps/goods/models.py:9 apps/goods/models.py:50
 msgid "code"
 msgstr "код"
 
@@ -43,7 +43,7 @@ msgstr "Высота"
 msgid "Blown volume"
 msgstr "Объем при надувании"
 
-#: apps/goods/models.py:33 apps/goods/models.py:72 apps/main/models.py:7
+#: apps/goods/models.py:33 apps/goods/models.py:75 apps/main/models.py:8
 #: venv/lib/python3.11/site-packages/django/db/models/fields/files.py:393
 msgid "Image"
 msgstr "Фото"
@@ -53,36 +53,36 @@ msgid "Preform"
 msgstr "Преформa"
 
 #: apps/goods/models.py:39 apps/goods/templates/preforms/list.html:8
-#: apps/main/templates/index.html:59
+#: apps/main/templates/index.html:58
 msgid "Preforms"
 msgstr "Преформы"
 
-#: apps/goods/models.py:52 apps/goods/templates/bottlecaps/detail.html:16
+#: apps/goods/models.py:55 apps/goods/templates/bottlecaps/detail.html:16
 msgid "Raw materials"
 msgstr "Сырые Материалы"
 
-#: apps/goods/models.py:56 apps/goods/templates/bottlecaps/detail.html:17
+#: apps/goods/models.py:59 apps/goods/templates/bottlecaps/detail.html:17
 msgid "Application"
 msgstr "Приложение"
 
-#: apps/goods/models.py:60 apps/goods/templates/bottlecaps/detail.html:18
+#: apps/goods/models.py:63 apps/goods/templates/bottlecaps/detail.html:18
 msgid "Logo"
 msgstr "Лого"
 
-#: apps/goods/models.py:64 apps/goods/templates/bottlecaps/detail.html:19
+#: apps/goods/models.py:67 apps/goods/templates/bottlecaps/detail.html:19
 msgid "Manufacturing technology"
 msgstr "Технология производства"
 
-#: apps/goods/models.py:68 apps/goods/templates/bottlecaps/detail.html:20
+#: apps/goods/models.py:71 apps/goods/templates/bottlecaps/detail.html:20
 msgid "Food security"
 msgstr "Пищевая безопасность"
 
-#: apps/goods/models.py:86 apps/goods/templates/bottlecaps/list.html:18
+#: apps/goods/models.py:89 apps/goods/templates/bottlecaps/list.html:18
 msgid "Bottle Cap"
 msgstr "Крышка для Бутылок"
 
-#: apps/goods/models.py:87 apps/goods/templates/bottlecaps/list.html:8
-#: apps/main/templates/index.html:69
+#: apps/goods/models.py:90 apps/goods/templates/bottlecaps/list.html:8
+#: apps/main/templates/index.html:68
 msgid "Bottle Caps"
 msgstr "Крышки для Бутылок"
 
@@ -123,21 +123,17 @@ msgstr "Тема"
 msgid "Message"
 msgstr "Сообщение"
 
-#: apps/main/models.py:11
+#: apps/main/models.py:12
 msgid "Is Banner Active"
 msgstr "Активен ли баннер"
 
-#: apps/main/templates/index.html:24
-msgid "Welcome to <br>Ak Ýol | PET"
-msgstr "Добро пожаловать в <br>Ak Ýol | PET"
-
-#: apps/main/templates/index.html:26
-msgid ""
-"Order your pet bottles today and start enjoying your favorite drinks in a "
-"safe and sustainable way!"
+#: apps/main/models.py:16
+msgid "Title"
 msgstr ""
-"Закажите бутылки сегодня и начните наслаждаться вашими любимыми напитками "
-"безопасно!"
+
+#: apps/main/models.py:19
+msgid "Subtitle"
+msgstr ""
 
 #: apps/main/templates/index.html:28
 msgid "Load More"
@@ -155,19 +151,19 @@ msgstr ""
 "Наши ПЭТ<br>\n"
 "бутылки - лучшие"
 
-#: apps/main/templates/index.html:50
+#: apps/main/templates/index.html:49
 msgid "Our products"
 msgstr "Наши товары"
 
-#: core/settings.py:150
+#: core/settings/base.py:151
 msgid "Turkmen"
 msgstr ""
 
-#: core/settings.py:151
+#: core/settings/base.py:152
 msgid "English"
 msgstr ""
 
-#: core/settings.py:152
+#: core/settings/base.py:153
 msgid "Russian"
 msgstr ""
 
@@ -197,10 +193,10 @@ msgid "Home"
 msgstr "Главная"
 
 #: templates/navbar.html:16
-msgid "About"
-msgstr "О нас"
+msgid "Products"
+msgstr "Наши товары"
 
-#: templates/navbar.html:18
+#: templates/navbar.html:17
 msgid "Contact"
 msgstr "Связаться"
 
@@ -1470,3 +1466,16 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/translations/models.py:59
 msgid "translation"
 msgstr ""
+
+#~ msgid "Welcome to <br>Ak Ýol | PET"
+#~ msgstr "Добро пожаловать в <br>Ak Ýol | PET"
+
+#~ msgid ""
+#~ "Order your pet bottles today and start enjoying your favorite drinks in a "
+#~ "safe and sustainable way!"
+#~ msgstr ""
+#~ "Закажите бутылки сегодня и начните наслаждаться вашими любимыми напитками "
+#~ "безопасно!"
+
+#~ msgid "About"
+#~ msgstr "О нас"

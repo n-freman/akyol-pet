@@ -1,3 +1,5 @@
-AOS.init({
-    offset: -150
+$(document).ready(() => {
+    AOS.init({
+        offset: -150
+    })    
 })
