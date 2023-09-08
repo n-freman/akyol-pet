@@ -1,3 +1,3 @@
 AOS.init({
-    offset: -150
+    offset: -200
 })

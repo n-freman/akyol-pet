@@ -11,10 +11,13 @@ html, body {
 body {
   box-sizing: inherit;
   max-width: 100%;
-  background-color: #000;
+  background-image: url('/static/images/bg.webp');
   color: white;
   overflow: hidden;
   font-family: 'Oswald', sans-serif;
+  background-repeat: repeat-y;
+  background-size: 100% auto;
+  background-blend-mode: multiply;
 }
 
 a {
@@ -242,18 +245,21 @@ nav .close:hover div::after{
 }
 
 #banner .container {
-	padding: 15em 10vw 10em;
+	height: 100vh;
+	padding: 20em 10vw 10em;
+	background-color: none;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 }
 
 .header__title {
 	font-size: 3.5em;
+	max-width: 35rem;
 }
 
 .header__promo {
 	font-family: 'Nunito', sans-serif;
-	max-width: 25rem;
+	max-width: 35rem;
 }
 
 .header__more_btn {

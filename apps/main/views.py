@@ -1,6 +1,7 @@
 from django.core.mail import EmailMessage
 from django.http import JsonResponse
 from django.views.generic import TemplateView
+from django.utils.translation import get_language
 
 from .mixins import ContactMixin
 from .models import Banner
@@ -11,7 +12,8 @@ class HomeView(ContactMixin, TemplateView):
 
     def get_context_data(self, *args, **kwargs):
         context = super().get_context_data(*args, **kwargs)
-        context['banners'] = Banner.objects.filter(active=True)
+        context['banners'] = Banner.objects.filter(active=True)\
+            .translate(lang=get_language())
         return context
 
 
