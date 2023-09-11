@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div style="height: 7rem;"></div>
+<section id="about-us">
+    <div class="container">
+        {% if not page %}
+            <h1>In Development Process</h1>
+        {% else %}
+            <h1
+                class="section-title aos-init aos-animate" 
+                data-aos="fade-up"
+                data-aos-duration="600"
+            >
+                {% translate 'About Us' %}
+            </h1>
+            <img src="{{ page.image.url }}" alt="" class="about-us__image">
+            <p class="about-us__content">{{ page.content }}</p>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

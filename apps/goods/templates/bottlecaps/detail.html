@@ -10,6 +10,7 @@
                 <img src="{{ bottlecap.image.url }}" alt="" class="product-detail__image">
             </div>
             <div class="col-5">
+                {% include 'prev_next.html' %}
                 <h1 class="product-detail__title">{% translate 'Description' %}</h1>
                 <div class="product-detail__info">
                     <p>{% translate 'Code' %}: {{ bottlecap.code }}</hp>

@@ -24,3 +24,24 @@ class Banner(Translatable):
             'title',
             'subtitle'
         ]
+
+
+class AboutPage(Translatable):
+    content = models.TextField(
+        _('content')
+    )
+    image = models.ImageField(
+        _('image'),
+        upload_to='about-us'
+    )
+
+    class Meta:
+        verbose_name_plural = 'About Page'
+
+    class TranslatableMeta:
+        fields = [
+            'content'
+        ]
+
+    def __str__(self):
+        return 'Change'

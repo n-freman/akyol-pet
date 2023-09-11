@@ -2,6 +2,7 @@ from django.utils.translation import get_language
 from django.views.generic import DetailView, ListView
 
 from .models import BottleCap, Preform
+from .mixins import PrevNextMixin
 
 
 class PreformListView(ListView):
@@ -10,7 +11,7 @@ class PreformListView(ListView):
     context_object_name = 'preforms'
 
 
-class PreformDetailView(DetailView):
+class PreformDetailView(PrevNextMixin, DetailView):
     model = Preform
     template_name = 'preforms/detail.html'
     context_object_name = 'preform'
@@ -26,7 +27,7 @@ class BottleCapListView(ListView):
             .translate(lang=get_language())
 
 
-class BottleCapDetailView(DetailView):
+class BottleCapDetailView(PrevNextMixin, DetailView):
     model = BottleCap
     template_name = 'bottlecaps/detail.html'
     context_object_name = 'bottlecap'

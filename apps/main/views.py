@@ -1,10 +1,11 @@
+from typing import Any
 from django.core.mail import EmailMessage
 from django.http import JsonResponse
 from django.views.generic import TemplateView
 from django.utils.translation import get_language
 
 from .mixins import ContactMixin
-from .models import Banner
+from .models import Banner, AboutPage
 
 
 class HomeView(ContactMixin, TemplateView):
@@ -31,3 +32,16 @@ class ContactView(ContactMixin, TemplateView):
         return JsonResponse({
             'detail': 'Ok'
         })
+
+
+class AboutUsView(TemplateView):
+    template_name = 'about_us.html'
+
+    def get_context_data(self, **kwargs: Any):
+        context = super().get_context_data(**kwargs)
+        try:
+            context['page'] = AboutPage.objects.first()
+        except Exception as e:
+            print(e)
+            context['page'] = None
+        return context

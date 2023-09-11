@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-08 20:05+0500\n"
+"POT-Creation-Date: 2023-09-11 12:21+0500\n"
 "PO-Revision-Date: 2023-08-21 10:44+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -27,15 +27,15 @@ msgstr ""
 msgid "code"
 msgstr "код"
 
-#: apps/goods/models.py:14
+#: apps/goods/models.py:14 apps/goods/templates/preforms/detail.html:17
 msgid "Thread standard"
-msgstr ""
+msgstr "Стандарт Преформы"
 
 #: apps/goods/models.py:18
 msgid "Weight"
 msgstr "Масса"
 
-#: apps/goods/models.py:23 apps/goods/templates/preforms/detail.html:21
+#: apps/goods/models.py:23 apps/goods/templates/preforms/detail.html:22
 msgid "Height"
 msgstr "Высота"
 
@@ -53,27 +53,27 @@ msgid "Preform"
 msgstr "Преформa"
 
 #: apps/goods/models.py:39 apps/goods/templates/preforms/list.html:8
-#: apps/main/templates/index.html:58
+#: apps/main/templates/index.html:44
 msgid "Preforms"
 msgstr "Преформы"
 
-#: apps/goods/models.py:55 apps/goods/templates/bottlecaps/detail.html:16
+#: apps/goods/models.py:55 apps/goods/templates/bottlecaps/detail.html:17
 msgid "Raw materials"
 msgstr "Сырые Материалы"
 
-#: apps/goods/models.py:59 apps/goods/templates/bottlecaps/detail.html:17
+#: apps/goods/models.py:59 apps/goods/templates/bottlecaps/detail.html:18
 msgid "Application"
 msgstr "Приложение"
 
-#: apps/goods/models.py:63 apps/goods/templates/bottlecaps/detail.html:18
+#: apps/goods/models.py:63 apps/goods/templates/bottlecaps/detail.html:19
 msgid "Logo"
 msgstr "Лого"
 
-#: apps/goods/models.py:67 apps/goods/templates/bottlecaps/detail.html:19
+#: apps/goods/models.py:67 apps/goods/templates/bottlecaps/detail.html:20
 msgid "Manufacturing technology"
 msgstr "Технология производства"
 
-#: apps/goods/models.py:71 apps/goods/templates/bottlecaps/detail.html:20
+#: apps/goods/models.py:71 apps/goods/templates/bottlecaps/detail.html:21
 msgid "Food security"
 msgstr "Пищевая безопасность"
 
@@ -82,34 +82,36 @@ msgid "Bottle Cap"
 msgstr "Крышка для Бутылок"
 
 #: apps/goods/models.py:90 apps/goods/templates/bottlecaps/list.html:8
-#: apps/main/templates/index.html:68
+#: apps/main/templates/index.html:54
 msgid "Bottle Caps"
 msgstr "Крышки для Бутылок"
 
-#: apps/goods/templates/bottlecaps/detail.html:13
-#: apps/goods/templates/preforms/detail.html:13
+#: apps/goods/templates/bottlecaps/detail.html:14
+#: apps/goods/templates/preforms/detail.html:14
 msgid "Description"
 msgstr "Описание"
 
-#: apps/goods/templates/bottlecaps/detail.html:15
-#: apps/goods/templates/preforms/detail.html:15
+#: apps/goods/templates/bottlecaps/detail.html:16
+#: apps/goods/templates/preforms/detail.html:16
 #: apps/goods/templates/preforms/list.html:18
 msgid "Code"
 msgstr "Код"
 
-#: apps/goods/templates/preforms/detail.html:16
-msgid "Thread Standard"
-msgstr ""
-
-#: apps/goods/templates/preforms/detail.html:18
+#: apps/goods/templates/preforms/detail.html:19
 msgid "Weigth"
 msgstr "Масса"
 
-#: apps/goods/templates/preforms/detail.html:23
-#, fuzzy
-#| msgid "Blown volume"
+#: apps/goods/templates/preforms/detail.html:24
 msgid "Blown Volume"
 msgstr "Объем при надувании"
+
+#: apps/goods/templates/prev_next.html:4
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: apps/goods/templates/prev_next.html:7
+msgid "Next"
+msgstr "Следующий"
 
 #: apps/main/forms.py:6
 msgid "Your email"
@@ -135,11 +137,25 @@ msgstr ""
 msgid "Subtitle"
 msgstr ""
 
-#: apps/main/templates/index.html:28
+#: apps/main/models.py:31
+msgid "content"
+msgstr ""
+
+#: apps/main/models.py:34
+#, fuzzy
+#| msgid "Image"
+msgid "image"
+msgstr "Фото"
+
+#: apps/main/templates/about_us.html:16
+msgid "About Us"
+msgstr "О нас"
+
+#: apps/main/templates/index.html:14
 msgid "Load More"
 msgstr "Узнать больше"
 
-#: apps/main/templates/index.html:39
+#: apps/main/templates/index.html:25
 msgid ""
 "\n"
 "            Our pet bottles \n"
@@ -151,7 +167,7 @@ msgstr ""
 "Наши ПЭТ<br>\n"
 "бутылки - лучшие"
 
-#: apps/main/templates/index.html:49
+#: apps/main/templates/index.html:35
 msgid "Our products"
 msgstr "Наши товары"
 
@@ -188,15 +204,15 @@ msgstr ""
 msgid "All rights reserved. Powered by n-freman"
 msgstr "Все права защищены. Разаработал n-freman"
 
-#: templates/navbar.html:15
+#: templates/navbar.html:29
 msgid "Home"
 msgstr "Главная"
 
-#: templates/navbar.html:16
+#: templates/navbar.html:30
 msgid "Products"
 msgstr "Наши товары"
 
-#: templates/navbar.html:17
+#: templates/navbar.html:31
 msgid "Contact"
 msgstr "Связаться"
 
@@ -1476,6 +1492,3 @@ msgstr ""
 #~ msgstr ""
 #~ "Закажите бутылки сегодня и начните наслаждаться вашими любимыми напитками "
 #~ "безопасно!"
-
-#~ msgid "About"
-#~ msgstr "О нас"

@@ -28,6 +28,8 @@ urlpatterns = i18n_patterns(
     path('', include('main.urls')),
 )
 
+print(settings.DEBUG)
+
 if settings.DEBUG:
     urlpatterns += static(
         settings.STATIC_URL,
