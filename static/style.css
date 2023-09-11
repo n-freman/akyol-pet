@@ -625,3 +625,7 @@ footer .container {
 .prev_next a:hover {
 	color: #f33;
 }
+
+.prev_next * + * {
+	margin-left: 1em;
+}
