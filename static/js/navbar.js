@@ -2,10 +2,10 @@ const open = document.querySelector('.nav-toggle');
 const close = document.querySelector('.close');
 var tl = gsap.timeline({ defaults: { duration: 0.3, ease: 'expo.inOut' } });
 open.addEventListener('click', () => {
+	window.scrollTo(0, 0);
 	if (tl.reversed()) {
 		tl.play();
 	} else {
-		window.scrollTo(0, 0);
 		tl.to('nav', { top: 0, background: 'rgba(0, 0, 0, 0.95)', height: '20vh' })
 			.to('nav', { height: '100vh' }, '-=.1')
 			.to('.bars', { opacity: 0})
