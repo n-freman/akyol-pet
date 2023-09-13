@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-11 12:21+0500\n"
-"PO-Revision-Date: 2023-08-21 10:44+0500\n"
+"POT-Creation-Date: 2023-09-13 18:48+0500\n"
+"PO-Revision-Date: 2023-09-13 18:50+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -147,7 +147,7 @@ msgstr ""
 msgid "image"
 msgstr "Фото"
 
-#: apps/main/templates/about_us.html:16
+#: apps/main/templates/about_us.html:16 templates/navbar.html:32
 msgid "About Us"
 msgstr "О нас"
 
@@ -194,11 +194,16 @@ msgstr "Вы также можете связаться с нами следую
 #: templates/contact_block.html:42
 msgid ""
 "\n"
-"                                Ashgabat, Bagtyyarlyk district,\n"
-"                                Ruhabat residential complex,\n"
-"                                Galkynysh street, 10\n"
+"                                6, Ayhan street, Buzmeyin residential "
+"complex ,\n"
+"                                Buzmeyin district, Ashgabat city, "
+"Turkmenistan\n"
 "                            "
 msgstr ""
+"\n"
+"Туркменистан, г. Ашгабат, район Бюзмейин,\n"
+"жилой комплекс Бюзмейин, ул. Айхан, дом № 6.\n"
+"                           "
 
 #: templates/footer.html:4
 msgid "All rights reserved. Powered by n-freman"

@@ -43,7 +43,7 @@ a {
 	color: #fff;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 920px) {
 	.top-bar img{
 		max-width: 150px;
 	}
@@ -199,12 +199,15 @@ nav .close:hover div::after{
 .nav-right {
 	display: flex;
 	align-items: center;
+	margin-left: -10em;
 }
 
 
 .language__list {
 	list-style: none;
+	display: flex;
 	margin-left: 1em;
+	gap: 1em;
 }
 
 .language__list li {
@@ -222,11 +225,9 @@ nav .close:hover div::after{
 	color: #f33;
 }
 
-@media screen and (max-width: 720px) {
-	.language-bar {
-		display: none;
-		z-index: 11;
-		opacity: 0;
+@media screen and (max-width: 920px) {
+	.language__list {
+		margin-left: 10em;
 	}
 }
 

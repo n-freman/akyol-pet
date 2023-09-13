@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-11 12:21+0500\n"
+"POT-Creation-Date: 2023-09-13 18:48+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,7 +144,7 @@ msgstr ""
 msgid "image"
 msgstr ""
 
-#: apps/main/templates/about_us.html:16
+#: apps/main/templates/about_us.html:16 templates/navbar.html:32
 msgid "About Us"
 msgstr ""
 
@@ -188,9 +188,10 @@ msgstr ""
 #: templates/contact_block.html:42
 msgid ""
 "\n"
-"                                Ashgabat, Bagtyyarlyk district,\n"
-"                                Ruhabat residential complex,\n"
-"                                Galkynysh street, 10\n"
+"                                6, Ayhan street, Buzmeyin residential "
+"complex ,\n"
+"                                Buzmeyin district, Ashgabat city, "
+"Turkmenistan\n"
 "                            "
 msgstr ""
 
