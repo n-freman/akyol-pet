@@ -106,11 +106,11 @@ msgstr "Çişirilen göwrümi"
 
 #: apps/goods/templates/prev_next.html:4
 msgid "Previous"
-msgstr "Indiki"
+msgstr "Öňki"
 
 #: apps/goods/templates/prev_next.html:7
 msgid "Next"
-msgstr "Öňki"
+msgstr "Indiki"
 
 #: apps/main/forms.py:6
 msgid "Your email"
