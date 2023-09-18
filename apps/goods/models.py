@@ -14,7 +14,7 @@ class Preform(models.Model):
         _("Thread standard"),
         max_length=120
     )
-    weight = models.FloatField(
+    weight = models.CharField(
         _("Weight"),
         null=True,
         blank=True
@@ -50,6 +50,12 @@ class BottleCap(Translatable):
         _("code"), 
         max_length=16,
         primary_key=True
+    )
+    title = models.CharField(
+        _("title"),
+        max_length=120,
+        null=True,
+        blank=True
     )
     raw_materials = models.CharField(
         _("Raw materials"), 
