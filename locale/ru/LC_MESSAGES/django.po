@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-13 18:48+0500\n"
+"POT-Creation-Date: 2023-09-18 21:31+0500\n"
 "PO-Revision-Date: 2023-09-13 18:50+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -31,7 +31,7 @@ msgstr "код"
 msgid "Thread standard"
 msgstr "Стандарт Преформы"
 
-#: apps/goods/models.py:18
+#: apps/goods/models.py:18 apps/goods/templates/preforms/detail.html:19
 msgid "Weight"
 msgstr "Масса"
 
@@ -43,7 +43,7 @@ msgstr "Высота"
 msgid "Blown volume"
 msgstr "Объем при надувании"
 
-#: apps/goods/models.py:33 apps/goods/models.py:75 apps/main/models.py:8
+#: apps/goods/models.py:33 apps/goods/models.py:81 apps/main/models.py:8
 #: venv/lib/python3.11/site-packages/django/db/models/fields/files.py:393
 msgid "Image"
 msgstr "Фото"
@@ -57,31 +57,35 @@ msgstr "Преформa"
 msgid "Preforms"
 msgstr "Преформы"
 
-#: apps/goods/models.py:55 apps/goods/templates/bottlecaps/detail.html:17
+#: apps/goods/models.py:55
+msgid "title"
+msgstr "название"
+
+#: apps/goods/models.py:61 apps/goods/templates/bottlecaps/detail.html:17
 msgid "Raw materials"
 msgstr "Сырые Материалы"
 
-#: apps/goods/models.py:59 apps/goods/templates/bottlecaps/detail.html:18
+#: apps/goods/models.py:65 apps/goods/templates/bottlecaps/detail.html:18
 msgid "Application"
 msgstr "Приложение"
 
-#: apps/goods/models.py:63 apps/goods/templates/bottlecaps/detail.html:19
+#: apps/goods/models.py:69 apps/goods/templates/bottlecaps/detail.html:19
 msgid "Logo"
 msgstr "Лого"
 
-#: apps/goods/models.py:67 apps/goods/templates/bottlecaps/detail.html:20
+#: apps/goods/models.py:73 apps/goods/templates/bottlecaps/detail.html:20
 msgid "Manufacturing technology"
 msgstr "Технология производства"
 
-#: apps/goods/models.py:71 apps/goods/templates/bottlecaps/detail.html:21
+#: apps/goods/models.py:77 apps/goods/templates/bottlecaps/detail.html:21
 msgid "Food security"
 msgstr "Пищевая безопасность"
 
-#: apps/goods/models.py:89 apps/goods/templates/bottlecaps/list.html:18
+#: apps/goods/models.py:95 apps/goods/templates/bottlecaps/list.html:18
 msgid "Bottle Cap"
 msgstr "Крышка для Бутылок"
 
-#: apps/goods/models.py:90 apps/goods/templates/bottlecaps/list.html:8
+#: apps/goods/models.py:96 apps/goods/templates/bottlecaps/list.html:8
 #: apps/main/templates/index.html:54
 msgid "Bottle Caps"
 msgstr "Крышки для Бутылок"
@@ -93,13 +97,8 @@ msgstr "Описание"
 
 #: apps/goods/templates/bottlecaps/detail.html:16
 #: apps/goods/templates/preforms/detail.html:16
-#: apps/goods/templates/preforms/list.html:18
 msgid "Code"
 msgstr "Код"
-
-#: apps/goods/templates/preforms/detail.html:19
-msgid "Weigth"
-msgstr "Масса"
 
 #: apps/goods/templates/preforms/detail.html:24
 msgid "Blown Volume"
@@ -158,14 +157,15 @@ msgstr "Узнать больше"
 #: apps/main/templates/index.html:25
 msgid ""
 "\n"
-"            Our pet bottles \n"
+"            Leadership is\n"
 "            <br>\n"
-"            are the best\n"
+"            to be best always and everywhere\n"
 "            "
 msgstr ""
-"\n"
-"Наши ПЭТ<br>\n"
-"бутылки - лучшие"
+"            Лидерство - это\n"
+"            <br>\n"
+"            быть лучшим всегда и везде\n"
+"            "
 
 #: apps/main/templates/index.html:35
 msgid "Our products"
@@ -191,7 +191,7 @@ msgstr "Связаться С Нами"
 msgid "You can also contact us through the links below:"
 msgstr "Вы также можете связаться с нами следующими способами:"
 
-#: templates/contact_block.html:42
+#: templates/contact_block.html:46
 msgid ""
 "\n"
 "                                6, Ayhan street, Buzmeyin residential "
@@ -1487,6 +1487,9 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/translations/models.py:59
 msgid "translation"
 msgstr ""
+
+#~ msgid "Weigth"
+#~ msgstr "Масса"
 
 #~ msgid "Welcome to <br>Ak Ýol | PET"
 #~ msgstr "Добро пожаловать в <br>Ak Ýol | PET"
