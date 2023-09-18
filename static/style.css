@@ -528,7 +528,7 @@ footer .container {
 .product__image {
 	position: absolute;
 	width: 20em;
-	bottom: 7em;
+	bottom: 9em;
 	transition: width 0.3s ease-in;
 	transform: translateX(-20%);
 }
@@ -612,11 +612,15 @@ footer .container {
 
 
 .prev_next {
-	height: 5rem;
 	font-size: 2em;
+	display: flex;
+	margin-bottom: 2rem;
+	width: 100%;
+	justify-content: center;
 }
 
 .prev_next > .btn {
+	display: block;
 	color: #000;
 	background-color: #fff;
 	padding: 0.03em 0.3em 0.1em 0.3em;
@@ -627,11 +631,11 @@ footer .container {
 
 .prev_next > .btn:hover {
 	color: #f33;
-	box-shadow: 5px 5px 2px gray;
+	box-shadow: 3px 3px 5px gray;
 }
 
 .prev_next > .btn.next:hover {
-	box-shadow: -5px 5px 2px gray;
+	box-shadow: -3px 3px 5px gray;
 }
 
 .prev_next .btn.prev {
@@ -670,4 +674,17 @@ footer .container {
 
 .prev_next * + * {
 	margin-left: 1em;
+}
+
+@media screen and (max-width: 720px) {
+
+	.prev_next > .btn {
+		max-width: 1em;
+		overflow: hidden;
+		color: #fff;
+	}
+
+	.prev_next > .btn:hover {
+		color: #fff;
+	}
 }
