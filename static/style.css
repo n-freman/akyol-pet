@@ -634,6 +634,10 @@ footer .container {
 	box-shadow: 3px 3px 5px gray;
 }
 
+.prev_next > .btn:active {
+	transform: scale(0.9);
+}
+
 .prev_next > .btn.next:hover {
 	box-shadow: -3px 3px 5px gray;
 }
@@ -655,7 +659,7 @@ footer .container {
 	border-color: transparent transparent transparent #000000;
 	content: ' ';
 	position: absolute;
-	top: 18px;
+	top: 12px;
 }
 
 .prev_next .btn.prev::before {

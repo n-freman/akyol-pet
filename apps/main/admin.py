@@ -1,9 +1,8 @@
 from django.contrib import admin
 from django.http.request import HttpRequest
-
 from translations.admin import TranslatableAdmin, TranslationInline
 
-from .models import Banner, AboutPage
+from .models import AboutPage, Banner, FeedBack
 
 
 class BannerAdminConfig(TranslatableAdmin):
@@ -22,5 +21,16 @@ class AboutPageConfig(TranslatableAdmin):
         return False
 
 
-admin.site.register(Banner, BannerAdminConfig)
+class FeedbackAdminConfig(admin.ModelAdmin):
+    list_display = ['sender', 'subject', 'message']
+
+    def has_change_permission(self, *args, **kwargs) -> bool:
+        return False
+    
+    def has_add_permission(self, *args, **kwargs) -> bool:
+        return False
+
+
 admin.site.register(AboutPage, AboutPageConfig)
+admin.site.register(Banner, BannerAdminConfig)
+admin.site.register(FeedBack, FeedbackAdminConfig)

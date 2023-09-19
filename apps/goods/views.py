@@ -1,8 +1,8 @@
 from django.utils.translation import get_language
 from django.views.generic import DetailView, ListView
 
-from .models import BottleCap, Preform
 from .mixins import PrevNextMixin
+from .models import BottleCap, Preform
 
 
 class PreformListView(ListView):
