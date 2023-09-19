@@ -45,3 +45,19 @@ class AboutPage(Translatable):
 
     def __str__(self):
         return 'Change'
+
+
+class FeedBack(models.Model):
+    sender = models.EmailField(
+        _("sender"),
+    )
+    subject = models.CharField(
+        _("subject"),
+        max_length=120,
+    )
+    message = models.TextField(
+        _("message"),
+    )
+
+    def __str__(self):
+        return f'{_("From")}: {self.sender}'
