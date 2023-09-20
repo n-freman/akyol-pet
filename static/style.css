@@ -659,16 +659,17 @@ footer .container {
 	border-color: transparent transparent transparent #000000;
 	content: ' ';
 	position: absolute;
-	top: 12px;
+	top: 18px;
+	--offset: 10px;
 }
 
 .prev_next .btn.prev::before {
 	rotate: 180deg;
-	left: 10px;
+	left: var(--offset);
 }
 
 .prev_next .btn.next::after {
-	right: 10px;
+	right: var(--offset);
 }
 
 .prev_next .btn.prev:hover::before,
@@ -678,6 +679,18 @@ footer .container {
 
 .prev_next * + * {
 	margin-left: 1em;
+}
+
+@media screen and (min-width: 920px) {
+	.prev_next .btn {
+		font-size: 0.8em;
+	}
+	
+	.prev_next .btn.prev::before,
+	.prev_next .btn.next::after {
+		top: 12px;
+		--offset: 6px;
+	}
 }
 
 @media screen and (max-width: 720px) {
