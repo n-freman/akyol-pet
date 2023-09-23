@@ -14,14 +14,13 @@
                 <h1 class="product-detail__title">{% translate 'Description' %}</h1>
                 <div class="product-detail__info">
                     <p>{% translate 'Code' %}: {{ preform.code }}</hp>
-                    <p>{% translate 'Thread standard' %}: {{ preform.thread_standard }}</p>
+                    <p>{% translate 'Preform size' %}: {{ preform.thread_standard }}</p>
                     {% if preform.weight %}
                     <p>{% translate 'Weight' %}: {{ preform.weight }}</p>
                     {% endif %}
                     {% if preform.height %}
                     <p>{% translate 'Height' %}: {{ preform.height }}</p>
                     {% endif %}
-                    <p>{% translate 'Blown Volume' %}: {{ preform.blown_volume }}</p>
                 </div>
             </div>
         </div>

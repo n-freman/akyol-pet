@@ -5,7 +5,7 @@ from .models import BottleCap, Preform
 
 
 class PreformAdminCofnig(admin.ModelAdmin):
-    list_display = ['code', 'thread_standard', 'weight', 'height']
+    list_display = ['code', 'preform_size', 'weight', 'height']
 
 
 class BottleCapAdminConfig(TranslatableAdmin):

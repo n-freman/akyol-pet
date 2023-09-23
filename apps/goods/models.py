@@ -10,8 +10,8 @@ class Preform(models.Model):
         max_length=16, 
         primary_key=True
     )
-    thread_standard = models.CharField(
-        _("Thread standard"),
+    preform_size = models.CharField(
+        _("Preform size"),
         max_length=120
     )
     weight = models.CharField(
@@ -23,11 +23,6 @@ class Preform(models.Model):
         _("Height"),
         null=True,
         blank=True
-    )
-    blown_volume = models.CharField(
-        _("Blown volume"),
-        max_length=120,
-        null=True
     )
     image = models.ImageField(
         _("Image"),
@@ -69,10 +64,6 @@ class BottleCap(Translatable):
         _("Logo"), 
         max_length=255
     )
-    manufacturing_technology = models.CharField(
-        _("Manufacturing technology"),
-        max_length=120
-    )
     food_security = models.CharField(
         _("Food security"),
         max_length=255
@@ -87,7 +78,6 @@ class BottleCap(Translatable):
             'raw_materials',
             'application',
             'logo',
-            'manufacturing_technology',
             'food_security'
         ]
 
