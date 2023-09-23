@@ -24,6 +24,9 @@ class Banner(Translatable):
             'title',
             'subtitle'
         ]
+    
+    def __str__(self):
+        return self.title
 
 
 class AboutPage(Translatable):

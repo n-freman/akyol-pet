@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 21:31+0500\n"
-"PO-Revision-Date: 2023-09-13 18:50+0500\n"
+"POT-Creation-Date: 2023-09-23 17:34+0500\n"
+"PO-Revision-Date: 2023-09-23 17:36+0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -23,13 +23,13 @@ msgstr ""
 msgid "Goods"
 msgstr ""
 
-#: apps/goods/models.py:9 apps/goods/models.py:50
+#: apps/goods/models.py:9 apps/goods/models.py:45
 msgid "code"
 msgstr "код"
 
 #: apps/goods/models.py:14 apps/goods/templates/preforms/detail.html:17
-msgid "Thread standard"
-msgstr "Стандарт Преформы"
+msgid "Preform size"
+msgstr "Размер Преформы"
 
 #: apps/goods/models.py:18 apps/goods/templates/preforms/detail.html:19
 msgid "Weight"
@@ -39,54 +39,50 @@ msgstr "Масса"
 msgid "Height"
 msgstr "Высота"
 
-#: apps/goods/models.py:28
-msgid "Blown volume"
-msgstr "Объем при надувании"
-
-#: apps/goods/models.py:33 apps/goods/models.py:81 apps/main/models.py:8
+#: apps/goods/models.py:28 apps/goods/models.py:76 apps/main/models.py:8
 #: venv/lib/python3.11/site-packages/django/db/models/fields/files.py:393
 msgid "Image"
 msgstr "Фото"
 
-#: apps/goods/models.py:38
+#: apps/goods/models.py:33
 msgid "Preform"
 msgstr "Преформa"
 
-#: apps/goods/models.py:39 apps/goods/templates/preforms/list.html:8
-#: apps/main/templates/index.html:44
+#: apps/goods/models.py:34 apps/goods/templates/preforms/list.html:8
+#: apps/main/templates/index.html:45
 msgid "Preforms"
 msgstr "Преформы"
 
-#: apps/goods/models.py:55
+#: apps/goods/models.py:50
 msgid "title"
 msgstr "название"
 
-#: apps/goods/models.py:61 apps/goods/templates/bottlecaps/detail.html:17
+#: apps/goods/models.py:56 apps/goods/templates/bottlecaps/detail.html:17
 msgid "Raw materials"
 msgstr "Сырые Материалы"
 
-#: apps/goods/models.py:65 apps/goods/templates/bottlecaps/detail.html:18
+#: apps/goods/models.py:60 apps/goods/templates/bottlecaps/detail.html:18
 msgid "Application"
 msgstr "Приложение"
 
-#: apps/goods/models.py:69 apps/goods/templates/bottlecaps/detail.html:19
+#: apps/goods/models.py:64 apps/goods/templates/bottlecaps/detail.html:19
 msgid "Logo"
 msgstr "Лого"
 
-#: apps/goods/models.py:73 apps/goods/templates/bottlecaps/detail.html:20
+#: apps/goods/models.py:68 apps/goods/templates/bottlecaps/detail.html:20
 msgid "Manufacturing technology"
 msgstr "Технология производства"
 
-#: apps/goods/models.py:77 apps/goods/templates/bottlecaps/detail.html:21
+#: apps/goods/models.py:72 apps/goods/templates/bottlecaps/detail.html:21
 msgid "Food security"
 msgstr "Пищевая безопасность"
 
-#: apps/goods/models.py:95 apps/goods/templates/bottlecaps/list.html:18
+#: apps/goods/models.py:90 apps/goods/templates/bottlecaps/list.html:18
 msgid "Bottle Cap"
 msgstr "Крышка для Бутылок"
 
-#: apps/goods/models.py:96 apps/goods/templates/bottlecaps/list.html:8
-#: apps/main/templates/index.html:54
+#: apps/goods/models.py:91 apps/goods/templates/bottlecaps/list.html:8
+#: apps/main/templates/index.html:55
 msgid "Bottle Caps"
 msgstr "Крышки для Бутылок"
 
@@ -99,10 +95,6 @@ msgstr "Описание"
 #: apps/goods/templates/preforms/detail.html:16
 msgid "Code"
 msgstr "Код"
-
-#: apps/goods/templates/preforms/detail.html:24
-msgid "Blown Volume"
-msgstr "Объем при надувании"
 
 #: apps/goods/templates/prev_next.html:4
 msgid "Previous"
@@ -136,25 +128,37 @@ msgstr ""
 msgid "Subtitle"
 msgstr ""
 
-#: apps/main/models.py:31
+#: apps/main/models.py:34
 msgid "content"
 msgstr ""
 
-#: apps/main/models.py:34
+#: apps/main/models.py:37
 #, fuzzy
 #| msgid "Image"
 msgid "image"
 msgstr "Фото"
 
+#: apps/main/models.py:55
+msgid "sender"
+msgstr ""
+
+#: apps/main/models.py:58
+#, fuzzy
+#| msgid "Subject"
+msgid "subject"
+msgstr "Тема"
+
+#: apps/main/models.py:62
+#, fuzzy
+#| msgid "Message"
+msgid "message"
+msgstr "Сообщение"
+
 #: apps/main/templates/about_us.html:16 templates/navbar.html:32
 msgid "About Us"
 msgstr "О нас"
 
-#: apps/main/templates/index.html:14
-msgid "Load More"
-msgstr "Узнать больше"
-
-#: apps/main/templates/index.html:25
+#: apps/main/templates/index.html:26
 msgid ""
 "\n"
 "            Leadership is\n"
@@ -162,12 +166,13 @@ msgid ""
 "            to be best always and everywhere\n"
 "            "
 msgstr ""
+"\n"
 "            Лидерство - это\n"
 "            <br>\n"
 "            быть лучшим всегда и везде\n"
 "            "
 
-#: apps/main/templates/index.html:35
+#: apps/main/templates/index.html:36
 msgid "Our products"
 msgstr "Наши товары"
 
@@ -1487,6 +1492,18 @@ msgstr ""
 #: venv/lib/python3.11/site-packages/translations/models.py:59
 msgid "translation"
 msgstr ""
+
+#~ msgid "Thread standard"
+#~ msgstr "Размер Преформы"
+
+#~ msgid "Blown volume"
+#~ msgstr "Объем при надувании"
+
+#~ msgid "Blown Volume"
+#~ msgstr "Объем при надувании"
+
+#~ msgid "Load More"
+#~ msgstr "Узнать больше"
 
 #~ msgid "Weigth"
 #~ msgstr "Масса"
