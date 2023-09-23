@@ -7,11 +7,12 @@
 >
     {% for banner in banners %}
     <div class="container" style="background-image: url('{{ banner.image.url }}');">
+        {% autoescape off %}
         <h2 class="header__title">{{ banner.title }}</h2>
         <p class="header__promo">
             {{ banner.subtitle }}
         </p>
-        <a href="" class="confetti-button header__more_btn">{% translate 'Load More' %}</a>
+        {% endautoescape %}
     </div>
     {% endfor %}
 </header>
