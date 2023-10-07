@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div style="height: 5rem;"></div>
+<main>
+    <div class="container">
+        <div class="row product-detail">
+            <div class="col-3">
+                <img src="{{ bottlecap.image.url }}" alt="" class="product-detail__image">
+            </div>
+            <div class="col-5">
+                {% include 'prev_next.html' %}
+                <h1 class="product-detail__title">{% translate 'Description' %}</h1>
+                <div class="product-detail__info">
+                    <p>{% translate 'Code' %}: {{ bottlecap.code }}</hp>
+                    <p>{% translate 'Raw materials' %}: {{ bottlecap.raw_materials }}</p>
+                    <p>{% translate 'Application' %}: {{ bottlecap.application }}</p>
+                    <p>{% translate 'Logo' %}: {{ bottlecap.logo }}</p>
+                    <p>{% translate 'Food security' %}: {{ bottlecap.food_security }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% load static i18n %}
+<section id="contact-us">
+    <div class="container">
+        <h1 
+            class="section-title aos-init aos-animate" 
+            data-aos="fade-up"
+            data-aos-duration="600"
+        >
+            {% translate 'Contact Us' %}
+        </h1>
+        <div class="row">
+            <form
+                action="{% url 'contact-us' %}"
+                id="contact-form"
+                class="col-7"
+                method="post"
+                data-aos="fade-up"
+                data-aos-duration="6000"
+                data-aos-delay="600"
+            >
+                {% for field in contact_form %}
+                    <label for="">{{ field.label }}</label>
+                    {{ field}}
+                {% endfor %}
+                <button type="submit" class="confetti-button">Send</button>
+            </form>
+            <div 
+                class="col-3 contact-detail"
+                data-aos="fade-up"
+                data-aos-duration="600"
+                data-aos-delay="1200"
+            >
+                <h3>{% translate 'You can also contact us through the links below:' %}</h3>
+                <div class="contact-link__list">
+                    <div class="contact-link__item">
+                        <i class="fa-solid fa-phone text-lg"></i>
+                        <div>
+                            <a class="contact-link__data" href="tel:+99312 33-53-75">+99312 33-53-75</a>
+                            <br>
+                            <a class="contact-link__data" href="tel:+99365 72-73-78">+99365 72-73-78</a>
+                        </div>
+                    </div>
+                    <div class="contact-link__item">
+                        <i class="fa-solid fa-map-pin text-lg"></i>
+                        <a class="contact-link__data" href="#">
+                            {% blocktranslate %}
+                                6, Ayhan street, Buzmeyin residential complex ,
+                                Buzmeyin district, Ashgabat city, Turkmenistan
+                            {% endblocktranslate %}
+                        </a>
+                    </div>
+                    <div class="contact-link__item">
+                        <i class="fa-solid fa-envelope text-lg"></i>
+                        <div>
+                            <a class="contact-link__data" href="mailto:info@akyolpet.com.tm">info@akyolpet.com.tm</a>
+                            <br>
+                            <a class="contact-link__data" href="mailto:akyolmanager@gmail.com">akyolmanager@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="{% static 'js/send_email.js' %}"></script>

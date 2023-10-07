@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div style="height: 7rem;"></div>
+<main>
+    <div class="container">
+        <div class="row product-detail">
+            <div class="col-3">
+                <img src="{{ preform.image.url }}" alt="" class="product-detail__image">
+            </div>
+            <div class="col-5">
+                {% include 'prev_next.html' %}
+                <h1 class="product-detail__title">{% translate 'Description' %}</h1>
+                <div class="product-detail__info">
+                    <p>{% translate 'Code' %}: {{ preform.code }}</hp>
+                    <p>{% translate 'Preform size' %}: {{ preform.preform_size }}</p>
+                    {% if preform.weight %}
+                    <p>{% translate 'Weight' %}: {{ preform.weight }}</p>
+                    {% endif %}
+                    {% if preform.height %}
+                    <p>{% translate 'Height' %}: {{ preform.height }}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}

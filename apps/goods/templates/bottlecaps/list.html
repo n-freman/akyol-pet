@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load i18n %}
+
+{% block content %}
+<div style="margin-bottom: 5rem;"></div>
+<main>
+    <div class="container">
+        <h1 class="section-title">{% translate 'Bottle Caps' %}</h1>
+        <div class="products">
+            {% for bottlecap in bottlecaps %}
+            <a
+                class="product"
+                href="{{ bottlecap.get_absolute_url }}"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+            >
+                <img src="{{ bottlecap.image.url }}" alt="" class="product__image">
+                <h3 class="product__title">{% if bottlecap.title %} {{ bottlecap.title }} {% else %} {% translate 'Bottle Cap' %} {% endif %}</h3>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</main>
+{% endblock %}
